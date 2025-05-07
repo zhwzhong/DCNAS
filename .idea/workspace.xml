@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61b5e16b-18bb-4b6a-8458-e9a27852a5ff" name="Changes" comment="second">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc_complexity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc_complexity_cpu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/get_gpu_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/get_gpu_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/retrain_b.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/retrain_m.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/retrain_s.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/retrain_t.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/search_b.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/search_m.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/search_s.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/search_t.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/set_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/set_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/trainsuper_b.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/trainsuper_m.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/trainsuper_s.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/trainsuper_t.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/augment.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/augment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fastmri.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gf2.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/gf2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/m4raw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mpi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nir.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/nir.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nyu.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/nyu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rd.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/rd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/samplers.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/samplers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/uav.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/wv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/wv2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist.py" beforeDir="false" afterPath="$PROJECT_DIR$/dist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimator.py" beforeDir="false" afterPath="$PROJECT_DIR$/estimator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flop_counter/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flop_counter/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flop_counter/checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/flop_counter/checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_lookup_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/logger/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loss/BALoss.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss/BALoss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loss/CharbonnierLoss.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss/CharbonnierLoss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loss/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loss/smooth_l1_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss/smooth_l1_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_compare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ahmf.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/ahmf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/basenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/basenet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/codon.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/codon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/codow.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/codow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cunet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/cunet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dagf.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dagf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dcnas.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dcnas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dcnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dcnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dctnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dctnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dgf.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dgf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/djf.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/djf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/djfr.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/djfr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dkn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dkn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dmsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dmsg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dsrn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dsrn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dynamic_op.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dynamic_op.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fdsr.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/fdsr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fix_dcnas.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/fix_dcnas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fsvnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/fusion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/gad.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/gad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/graphsr.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/graphsr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/gsfnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/gsfnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hfin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/jiif.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/jiif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/lapnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/layers_SG.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/local_arch.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/local_arch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/lrt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/lt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mmnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/mmnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ptir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/restormer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/rsag.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/rsag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/sfintnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/sgnas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/sgnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/sgnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/swinir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tensor_op.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/umgf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/uterm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/xformer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/arch_sampler.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/arch_sampler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/bgru.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/bgru.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/generate_arch_pair.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/generate_arch_pair.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/pdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/pdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/rankloss.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/rankloss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/architectures.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/architectures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/base_lookup_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/base_lookup_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/checkpoiont.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/checkpoiont.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/clip_grad.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/clip_grad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/cuda.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cuda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/image_resize.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/image_resize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/metric_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/metric_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/misc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/optimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/optimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/others.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/others.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sampler.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sampler.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2QdWp5HZSRZIXK5FxgWv23jcrfq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.MMIR_network.executor&quot;: &quot;Run&quot;,
+    &quot;Python.UAV.executor&quot;: &quot;Run&quot;,
+    &quot;Python.attention.executor&quot;: &quot;Run&quot;,
+    &quot;Python.basenet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bgru.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calc_complexity.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calc_complexity_cpu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_process.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fastmri.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fsvnet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fsvnet1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fsvnet2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fsvnet3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gf2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gsfnet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hfin.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.m2cdl.executor&quot;: &quot;Run&quot;,
+    &quot;Python.m4raw.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mmnet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_compare.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mpi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nir.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nyu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pdata.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quick_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rankloss.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rd.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sfintnet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.swinir.executor&quot;: &quot;Run&quot;,
+    &quot;Python.uav.executor&quot;: &quot;Run&quot;,
+    &quot;Python.uterm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wv2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wv3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xformer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhwzhong/Works/TPAMI回复/DCNAS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="SGNAS" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="SGNAS" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.quick_test">
+    <configuration name="bgru" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DCNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictor/bgru.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SGNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/lt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DCNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SGNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SGNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pdata" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DCNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictor/pdata.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="quick_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DCNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quick_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rankloss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DCNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictor/rankloss.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SGNAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/rd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.quick_test" />
+        <item itemvalue="Python.rd" />
+        <item itemvalue="Python.bgru" />
+        <item itemvalue="Python.pdata" />
+        <item itemvalue="Python.rankloss" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19072.16" />
+        <option value="bundled-python-sdk-8336bb23522e-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19072.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61b5e16b-18bb-4b6a-8458-e9a27852a5ff" name="Changes" comment="" />
+      <created>1685684123767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685684123767</updated>
+      <workItem from="1685684128181" duration="5436000" />
+      <workItem from="1685707494968" duration="10905000" />
+      <workItem from="1685762485126" duration="3913000" />
+      <workItem from="1685847617616" duration="286000" />
+      <workItem from="1685848465813" duration="2389000" />
+      <workItem from="1685932129200" duration="356000" />
+      <workItem from="1686102637537" duration="2048000" />
+      <workItem from="1686125842950" duration="1619000" />
+      <workItem from="1686137092554" duration="365000" />
+      <workItem from="1686140477470" duration="2938000" />
+      <workItem from="1687696216930" duration="271000" />
+      <workItem from="1687777459244" duration="12000" />
+      <workItem from="1687781399023" duration="196000" />
+      <workItem from="1689124579355" duration="535000" />
+      <workItem from="1689237273930" duration="812000" />
+      <workItem from="1689323521682" duration="440000" />
+      <workItem from="1689573636420" duration="2468000" />
+      <workItem from="1689768605198" duration="2276000" />
+      <workItem from="1690899379124" duration="91000" />
+      <workItem from="1691160428302" duration="327000" />
+      <workItem from="1693660668158" duration="2790000" />
+      <workItem from="1697198038653" duration="2682000" />
+      <workItem from="1697201656792" duration="2445000" />
+      <workItem from="1697337728515" duration="598000" />
+      <workItem from="1699172813923" duration="1246000" />
+      <workItem from="1699187483283" duration="2302000" />
+      <workItem from="1699275971573" duration="1411000" />
+      <workItem from="1699280621865" duration="124000" />
+      <workItem from="1699340443095" duration="141000" />
+      <workItem from="1699340605219" duration="944000" />
+      <workItem from="1699342826993" duration="1145000" />
+      <workItem from="1699344533907" duration="120000" />
+      <workItem from="1699345182566" duration="59000" />
+      <workItem from="1699345266539" duration="578000" />
+      <workItem from="1699345861731" duration="191000" />
+      <workItem from="1699346337515" duration="1372000" />
+      <workItem from="1699858056133" duration="598000" />
+      <workItem from="1699921652896" duration="837000" />
+      <workItem from="1699945647324" duration="1201000" />
+      <workItem from="1700353428249" duration="2135000" />
+      <workItem from="1700881704087" duration="5096000" />
+      <workItem from="1701161949362" duration="311000" />
+      <workItem from="1701413033243" duration="16000" />
+      <workItem from="1702183840071" duration="4000" />
+      <workItem from="1706698647424" duration="357000" />
+      <workItem from="1707579944290" duration="2457000" />
+      <workItem from="1708233503328" duration="723000" />
+      <workItem from="1709617028079" duration="442000" />
+      <workItem from="1709617475282" duration="786000" />
+      <workItem from="1709619108323" duration="909000" />
+      <workItem from="1709726195413" duration="628000" />
+      <workItem from="1710907692409" duration="30597000" />
+      <workItem from="1711295178473" duration="798000" />
+      <workItem from="1711418616392" duration="1188000" />
+      <workItem from="1711420013993" duration="101000" />
+      <workItem from="1711420155258" duration="33035000" />
+      <workItem from="1712136316203" duration="1256000" />
+      <workItem from="1712195293190" duration="1660000" />
+      <workItem from="1712284389992" duration="712000" />
+      <workItem from="1712370016102" duration="7001000" />
+      <workItem from="1712637019135" duration="320000" />
+      <workItem from="1712637574015" duration="616000" />
+      <workItem from="1712717781509" duration="4471000" />
+      <workItem from="1713004218416" duration="1486000" />
+      <workItem from="1713325073819" duration="3159000" />
+      <workItem from="1713338091191" duration="4269000" />
+      <workItem from="1713343881050" duration="8970000" />
+      <workItem from="1713528525617" duration="114000" />
+      <workItem from="1713704026489" duration="376000" />
+      <workItem from="1713752068856" duration="1236000" />
+      <workItem from="1714651112559" duration="354000" />
+      <workItem from="1714653469407" duration="334000" />
+      <workItem from="1716540840551" duration="346000" />
+      <workItem from="1716562639503" duration="818000" />
+      <workItem from="1716987434420" duration="1207000" />
+      <workItem from="1716993107247" duration="413000" />
+      <workItem from="1717044596046" duration="1738000" />
+      <workItem from="1717059887278" duration="1251000" />
+      <workItem from="1717078768968" duration="46000" />
+      <workItem from="1717508451184" duration="1253000" />
+      <workItem from="1717526534180" duration="1665000" />
+      <workItem from="1717747965379" duration="4160000" />
+      <workItem from="1717762654797" duration="4013000" />
+      <workItem from="1717815608651" duration="1271000" />
+      <workItem from="1717826204623" duration="4669000" />
+      <workItem from="1717899502708" duration="4475000" />
+      <workItem from="1718074627723" duration="20270000" />
+      <workItem from="1718160459038" duration="65957000" />
+      <workItem from="1718640981066" duration="37646000" />
+      <workItem from="1718995203873" duration="1557000" />
+      <workItem from="1719046464822" duration="835000" />
+      <workItem from="1719284301784" duration="15236000" />
+      <workItem from="1719559048174" duration="5202000" />
+      <workItem from="1719669379656" duration="1163000" />
+      <workItem from="1719670890954" duration="1908000" />
+      <workItem from="1719672807952" duration="6554000" />
+      <workItem from="1719761337256" duration="3711000" />
+      <workItem from="1720000969411" duration="11539000" />
+      <workItem from="1720515919285" duration="636000" />
+      <workItem from="1720686762920" duration="665000" />
+      <workItem from="1720837967105" duration="3353000" />
+      <workItem from="1720944208683" duration="27479000" />
+      <workItem from="1721473841161" duration="1846000" />
+      <workItem from="1721794205265" duration="3139000" />
+      <workItem from="1721826565342" duration="6168000" />
+      <workItem from="1721913739721" duration="6707000" />
+      <workItem from="1722014689802" duration="4962000" />
+      <workItem from="1722338699891" duration="2001000" />
+      <workItem from="1722427488852" duration="699000" />
+      <workItem from="1722519972360" duration="2147000" />
+      <workItem from="1722582909685" duration="6857000" />
+      <workItem from="1722775658716" duration="666000" />
+      <workItem from="1722825362494" duration="5486000" />
+      <workItem from="1722948352278" duration="604000" />
+      <workItem from="1723031513655" duration="4710000" />
+      <workItem from="1723095145492" duration="3636000" />
+      <workItem from="1723172983884" duration="4964000" />
+      <workItem from="1723725972795" duration="2701000" />
+      <workItem from="1723793148663" duration="131000" />
+      <workItem from="1723797685724" duration="508000" />
+      <workItem from="1723803904349" duration="20000" />
+      <workItem from="1723804267902" duration="7000" />
+      <workItem from="1723804436702" duration="1290000" />
+      <workItem from="1723921879437" duration="2147000" />
+      <workItem from="1724000130491" duration="1610000" />
+      <workItem from="1724081827566" duration="1345000" />
+      <workItem from="1724207279878" duration="433000" />
+      <workItem from="1725348682094" duration="631000" />
+      <workItem from="1725349751024" duration="1214000" />
+      <workItem from="1725800443085" duration="19478000" />
+      <workItem from="1727010283184" duration="834000" />
+      <workItem from="1727011124476" duration="633000" />
+      <workItem from="1728835435546" duration="872000" />
+      <workItem from="1730700224286" duration="3000" />
+      <workItem from="1730700256059" duration="5337000" />
+      <workItem from="1730726195150" duration="1184000" />
+      <workItem from="1730740547921" duration="9638000" />
+      <workItem from="1730876995443" duration="7665000" />
+      <workItem from="1731769712342" duration="1546000" />
+      <workItem from="1731775859144" duration="3630000" />
+      <workItem from="1731824569352" duration="1297000" />
+      <workItem from="1731833902405" duration="3924000" />
+      <workItem from="1731939454698" duration="7000" />
+      <workItem from="1731939691307" duration="39000" />
+      <workItem from="1731939791387" duration="427000" />
+      <workItem from="1731947308436" duration="96000" />
+      <workItem from="1731950269435" duration="1687000" />
+      <workItem from="1731951967090" duration="3076000" />
+      <workItem from="1732120948857" duration="1709000" />
+      <workItem from="1732169570385" duration="360000" />
+      <workItem from="1732684495828" duration="7422000" />
+      <workItem from="1733230689972" duration="2006000" />
+      <workItem from="1734158202915" duration="2252000" />
+      <workItem from="1734353812500" duration="6681000" />
+      <workItem from="1734502171564" duration="48459000" />
+      <workItem from="1734754777724" duration="48209000" />
+      <workItem from="1734928240334" duration="2516000" />
+      <workItem from="1734931152961" duration="157000" />
+      <workItem from="1734935889582" duration="4135000" />
+      <workItem from="1734956258859" duration="537000" />
+      <workItem from="1734963151496" duration="13994000" />
+      <workItem from="1735050583378" duration="10544000" />
+      <workItem from="1735108137322" duration="5963000" />
+      <workItem from="1735134665168" duration="9492000" />
+      <workItem from="1735272667999" duration="2037000" />
+      <workItem from="1735281669646" duration="157000" />
+      <workItem from="1735303644131" duration="8039000" />
+      <workItem from="1735438334719" duration="853000" />
+      <workItem from="1735619761289" duration="78000" />
+      <workItem from="1735623273564" duration="161000" />
+      <workItem from="1736508888379" duration="1181000" />
+      <workItem from="1736510780996" duration="57000" />
+      <workItem from="1736521352048" duration="82000" />
+      <workItem from="1736605216483" duration="68000" />
+      <workItem from="1737430888834" duration="156000" />
+      <workItem from="1737431372429" duration="4815000" />
+      <workItem from="1737691195618" duration="1016000" />
+      <workItem from="1737818920312" duration="4901000" />
+      <workItem from="1738910319129" duration="709000" />
+      <workItem from="1738912497148" duration="786000" />
+      <workItem from="1739110771374" duration="52000" />
+      <workItem from="1739113531208" duration="28000" />
+      <workItem from="1740117370683" duration="1574000" />
+      <workItem from="1740369563859" duration="1689000" />
+      <workItem from="1740453667166" duration="689000" />
+      <workItem from="1740457163148" duration="1333000" />
+      <workItem from="1740575886985" duration="1000" />
+      <workItem from="1740830609372" duration="737000" />
+      <workItem from="1740838858242" duration="72000" />
+      <workItem from="1740839759248" duration="741000" />
+      <workItem from="1740895970276" duration="478000" />
+      <workItem from="1740896497033" duration="881000" />
+      <workItem from="1740921763427" duration="1207000" />
+      <workItem from="1741014049471" duration="5974000" />
+      <workItem from="1741055480066" duration="3658000" />
+      <workItem from="1741067157577" duration="226000" />
+      <workItem from="1741072381224" duration="198000" />
+      <workItem from="1741310906517" duration="542000" />
+      <workItem from="1741331853858" duration="345000" />
+      <workItem from="1741351922640" duration="1594000" />
+      <workItem from="1742178577287" duration="29000" />
+      <workItem from="1743008863562" duration="127000" />
+      <workItem from="1743061218920" duration="8880000" />
+      <workItem from="1743395083988" duration="7487000" />
+      <workItem from="1743440062233" duration="50000" />
+      <workItem from="1745560079697" duration="4255000" />
+      <workItem from="1745944913311" duration="9795000" />
+      <workItem from="1746169567992" duration="44394000" />
+      <workItem from="1746380964187" duration="23898000" />
+      <workItem from="1746551351088" duration="4127000" />
+      <workItem from="1746618304584" duration="3344000" />
+      <workItem from="1746651772588" duration="1447000" />
+    </task>
+    <task id="LOCAL-00001" summary="second">
+      <option name="closed" value="true" />
+      <created>1699343763616</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699343763616</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second" />
+    <option name="LAST_COMMIT_MESSAGE" value="second" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SGNAS$mpi.coverage" NAME="mpi Coverage Results" MODIFIED="1718093882838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$fsvnet.coverage" NAME="fsvnet Coverage Results" MODIFIED="1735179284695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$fsvnet3.coverage" NAME="fsvnet3 Coverage Results" MODIFIED="1735281708895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/DCNAS$bgru.coverage" NAME="bgru Coverage Results" MODIFIED="1746295686138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictor" />
+    <SUITE FILE_PATH="coverage/SGNAS$sfintnet.coverage" NAME="sfintnet Coverage Results" MODIFIED="1718698488377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$calc_complexity.coverage" NAME="calc_complexity Coverage Results" MODIFIED="1725801508654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SGNAS$gsfnet.coverage" NAME="gsfnet Coverage Results" MODIFIED="1718722737891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$UAV.coverage" NAME="UAV Coverage Results" MODIFIED="1718124116285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$fastmri.coverage" NAME="fastmri Coverage Results" MODIFIED="1735619773828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$swinir.coverage" NAME="swinir Coverage Results" MODIFIED="1734771372113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/DCNAS$rankloss.coverage" NAME="rankloss Coverage Results" MODIFIED="1746262100537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictor" />
+    <SUITE FILE_PATH="coverage/SGNAS$calc_complexity_cpu.coverage" NAME="calc_complexity_cpu Coverage Results" MODIFIED="1725804526124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SGNAS$model_compare.coverage" NAME="model_compare Coverage Results" MODIFIED="1718612738986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SGNAS$MMIR_network.coverage" NAME="m2cdl Coverage Results" MODIFIED="1718354485694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$xformer.coverage" NAME="xformer Coverage Results" MODIFIED="1734669484255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$fsvnet1.coverage" NAME="fsvnet1 Coverage Results" MODIFIED="1735028141791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$gen_lookup_table.coverage" NAME="gen_lookup_table Coverage Results" MODIFIED="1685793158075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SGNAS$gf2.coverage" NAME="gf2 Coverage Results" MODIFIED="1710983205073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/DCNAS$quick_test.coverage" NAME="quick_test Coverage Results" MODIFIED="1746651807436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SGNAS$main.coverage" NAME="main Coverage Results" MODIFIED="1719672064998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SGNAS$hfin.coverage" NAME="hfin Coverage Results" MODIFIED="1718543277823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$nir.coverage" NAME="nir Coverage Results" MODIFIED="1722586211744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$dynamic_op.coverage" NAME="dynamic_op Coverage Results" MODIFIED="1685711336591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/DCNAS$pdata.coverage" NAME="pdata Coverage Results" MODIFIED="1746286866413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/predictor" />
+    <SUITE FILE_PATH="coverage/SGNAS$dhmf.coverage" NAME="dhmf Coverage Results" MODIFIED="1693704538420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SGNAS$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1721047314637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$uav.coverage" NAME="uav Coverage Results" MODIFIED="1743063248947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$rd.coverage" NAME="rd Coverage Results" MODIFIED="1740897291147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$wv3.coverage" NAME="wv3 Coverage Results" MODIFIED="1710983047522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$nyu.coverage" NAME="nyu Coverage Results" MODIFIED="1732693229064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$mobile.coverage" NAME="mobile Coverage Results" MODIFIED="1689776081942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$m4raw.coverage" NAME="m4raw Coverage Results" MODIFIED="1713361603234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$fsvnet2.coverage" NAME="fsvnet2 Coverage Results" MODIFIED="1734928712058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$wv2.coverage" NAME="wv2 Coverage Results" MODIFIED="1717902803057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/SGNAS$attention.coverage" NAME="attention Coverage Results" MODIFIED="1734522040265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$m2cdl.coverage" NAME="m2cdl Coverage Results" MODIFIED="1718198201286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$mmnet.coverage" NAME="mmnet Coverage Results" MODIFIED="1718698372471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$lt.coverage" NAME="lt Coverage Results" MODIFIED="1741311013945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$basenet.coverage" NAME="basenet Coverage Results" MODIFIED="1722825697449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SGNAS$uterm.coverage" NAME="uterm Coverage Results" MODIFIED="1734767361409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+  </component>
+</project>
