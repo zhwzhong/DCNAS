@@ -53,18 +53,7 @@ def torch_psnr(img1, img2, border=0, data_range=255, qt=False, slice_ssim=False)
 
 def torch_rmse(im_pred, im_true, mask, attr):
     border = 0
-    attr = attr.lower()
-    if attr in ['diml', 'rd']:
-        mul_ratio = 0.1
-    elif attr in ['middlebury', 'lu', 'sintel', 'mpi', 'a', 'b', 'c', 'sun', 'dut']:
-        mul_ratio = 1
-    elif attr == 'didoe':
-        mul_ratio = 10
-    elif attr == 'nyu':
-        border = 6
-        mul_ratio = 100
-    else:
-        raise NotImplementedError
+    mul_ratio = 100
 
     b, c, h, w = im_true.size()
     if border != 0:
@@ -80,19 +69,13 @@ def torch_rmse(im_pred, im_true, mask, attr):
 def metrics(im_pred, im_true, mask, gdata, attr, dataset):
     sum_mae = 0
     sum_rmse = 0
-    border = 6 if dataset in ['UAV'] else 0
+    border = 0
     for index in range(im_pred.size(0)):
         if gdata:
             metric = mask_rmse(im_pred[index: index + 1], im_true[index: index + 1], mask[index: index + 1], attr)
-        elif dataset in ['WV2', 'WV3', 'GF2', 'NIR', 'UAV', 'NIR']:
+        elif dataset in ['WV2', 'GF2', 'NIR']:
             metric = torch_psnr(
                 im_pred[index: index + 1], im_true[index: index + 1], border=border, data_range=255, qt=True
-            )
-        elif dataset in ['FastMRI', 'M4Raw']:
-            # print('Here', im_pred.size())
-            metric = torch_psnr(
-                im_pred[index: index + 1], im_true[index: index + 1], border=border,
-                data_range=im_true[index: index + 1].max(), slice_ssim=True  # MIN 分开计算SSIM，合到一起算PSNR
             )
         else:
             metric = torch_rmse(im_pred[index: index + 1], im_true[index: index + 1], mask[index: index + 1], attr)
@@ -108,7 +91,6 @@ def get_mean_max(img_name):
         'uav': np.array([58.9369146,  47.9031459,  42.99039452]).reshape(1, 3, 1, 1),
         'a': 124, 'b': 124, 'c':124, 'didoe': 4, 'middlebury': 116, 'lu': 148, 'sun': 90,
         'wv2': np.array([42.6302067, 64.07775558, 43.55840663, 72.92202052]).reshape(1, 4, 1, 1),
-        'wv3': np.array([48.49153499, 67.8277034,  51.66618939, 74.27447972]).reshape(1, 4, 1, 1),
         'gf2': np.array([104.73031355, 71.25249889, 32.50238111, 54.13954554]).reshape(1, 4, 1, 1)
     }
     maxs = {

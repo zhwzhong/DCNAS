@@ -78,7 +78,6 @@ def evaluate(model, val_data, test_name, args, arch=None, logger=None):
     device = torch.device(args.device)
     metric_logger = MetricLogger(delimiter="  ")
     metric_logger.add_meter("RMSE/{}".format(test_name), SmoothedValue(window_size=1, fmt="{value}"))
-    metric_logger.add_meter("MAE/{}".format(test_name), SmoothedValue(window_size=1, fmt="{value}"))
     metric_logger.add_meter("Time/{}".format(test_name), SmoothedValue(window_size=1, fmt="{value}"))
 
     sv_path = f'./results/{args.dataset}/{args.down_type}/{args.model}/{args.scale}/{test_name}/'
@@ -127,16 +126,12 @@ def evaluate(model, val_data, test_name, args, arch=None, logger=None):
         torch.cuda.synchronize()
         img_out = de_normalize(outputs['img_out'], gt_img=norm_img, attr=_test_name, args=args)
 
-        if args.dataset.lower() in ['fastmri', 'm4raw']: # batch 转为 channel
-            img_out = img_out.permute(1, 0, 2, 3).contiguous()
-            samples['img_gt'] = samples['img_gt'].permute(1, 0, 2, 3).contiguous()
 
         rmse = metrics(
             img_out, samples['img_gt'], samples['img_mask'], args.gdata, attr=_test_name, dataset=args.dataset)
 
         metric_logger.meters["RMSE/{}".format(test_name)].update(rmse['RMSE'], n=samples['img_gt'].size(0))
         metric_logger.meters["Time/{}".format(test_name)].update(start.elapsed_time(end), n=nb)
-        metric_logger.meters["MAE/{}".format(test_name)].update(rmse['MAE'], n=samples['img_gt'].size(0))
         if args.save_result:
             img_name = samples['img_name']
             for i in range(samples['img_gt'].size(0)):
@@ -147,6 +142,4 @@ def evaluate(model, val_data, test_name, args, arch=None, logger=None):
     metric_logger.synchronize_between_processes()
     torch.cuda.empty_cache()
 
-    if args.save_result and args.dataset in ['MPI']:
-        print(tabulate(all_rmse, headers=['Name', 'RMSE'], tablefmt="grid"))
     return {k: round(meter.global_avg, 8) for k, meter in metric_logger.meters.items()}
