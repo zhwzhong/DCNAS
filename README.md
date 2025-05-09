@@ -1,4 +1,4 @@
-## DCNAS: Dual-Level Cross-Modality Neural Architecture Search for Guided Image Super-Resolution
+## Dual-Level Cross-Modality Neural Architecture Search for Guided Image Super-Resolution
 
 This repository provides the official implementation of our paper:
 
