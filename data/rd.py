@@ -11,12 +11,7 @@ from data.data_utils import mod_crop, get_lowers
 
 
 root_path = None
-for path in ['/data/zhwzhong/Data/GDSR', '/data_c/wcy/Data/GDSR', '/home/wcy/Data/GDSR', '/root/autodl-tmp/Data/GDSR',
-             '/home/zhizhong/Data/GDSR']:
-    tmp_path = '{}/data'.format(path)
-    if os.path.exists(tmp_path):
-        root_path = tmp_path
-        break
+
 
 
 class RD(Dataset):
@@ -69,40 +64,3 @@ class RD(Dataset):
             'img_lr': lr, 'lr_up': lr_up, 'img_mask': (~torch.isnan(dep)).float(), 'lr_mask': (~torch.isnan(lr)).float()
         }
 
-# from config import args
-# from utils.metrics import torch_rmse
-# from torch.utils.data import DataLoader
-#
-# args.scale = 1
-# args.dataset = 'RD'
-# nyu_data = DataLoader(RD(args, 'test'))
-# # nyu_data = DataLoader(NYU(args, 'diml'))
-# sum_psnr = []
-# for _, sample in enumerate(nyu_data):
-#     print(sample['img_gt'].max(), sample['lr_up'].max())
-#     # print(torch_rmse(sample['img_gt'], sample['lr_up'], mask=sample['img_mask'], attr='RD')['RMSE'])
-#     sum_psnr.append(torch_rmse(sample['img_gt'], sample['lr_up'], mask=sample['img_mask'], attr='RD')['RMSE'])
-#
-# print(np.mean(sum_psnr), 'Mean')
-
-
-# from config import args
-# from torch.utils.data import DataLoader
-#
-# args.img_norm = False
-# os.makedirs('/data/zhwzhong/Jupyter/DC-NAS/RD/result/LR/1/test', exist_ok=True)
-# os.makedirs('/data/zhwzhong/Jupyter/DC-NAS/RD/result/GT/1/test', exist_ok=True)
-# os.makedirs('/data/zhwzhong/Jupyter/DC-NAS/RD/result/RGB/1/test', exist_ok=True)
-#
-# nyu_data = DataLoader(RD(args, 'test'))
-#
-# sum_psnr = []
-# for _, sample in enumerate(nyu_data):
-#     np.save('/data/zhwzhong/Jupyter/DC-NAS/RD/result/LR/1/test/{}'.format(sample['img_name'][0]),
-#             sample['lr_up'].squeeze().cpu().detach().numpy())
-#
-#     np.save('/data/zhwzhong/Jupyter/DC-NAS/RD/result/GT/1/test/{}'.format(sample['img_name'][0]),
-#             sample['img_gt'].squeeze().cpu().detach().numpy())
-#
-#     np.save('/data/zhwzhong/Jupyter/DC-NAS/RD/result/RGB/1/test/{}'.format(sample['img_name'][0]),
-#             sample['img_rgb'].squeeze().cpu().detach().numpy() * 255)

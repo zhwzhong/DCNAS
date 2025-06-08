@@ -8,7 +8,7 @@ from logger import create_dir
 from predictor.arch_sampler import sample_arch
 from torch.nn.functional import interpolate
 from utils import MetricLogger, SmoothedValue, model_parameters
-from utils import mix_up, to_device, metrics, self_ensemble, normalize, de_normalize
+from utils import mix_up, to_device, self_ensemble, normalize, de_normalize
 from utils import dispatch_clip_grad, get_random_architecture, key2arch
 
 
@@ -127,17 +127,12 @@ def evaluate(model, val_data, test_name, args, arch=None, logger=None):
         img_out = de_normalize(outputs['img_out'], gt_img=norm_img, attr=_test_name, args=args)
 
 
-        rmse = metrics(
-            img_out, samples['img_gt'], samples['img_mask'], args.gdata, attr=_test_name, dataset=args.dataset)
-
-        metric_logger.meters["RMSE/{}".format(test_name)].update(rmse['RMSE'], n=samples['img_gt'].size(0))
         metric_logger.meters["Time/{}".format(test_name)].update(start.elapsed_time(end), n=nb)
         if args.save_result:
             img_name = samples['img_name']
             for i in range(samples['img_gt'].size(0)):
-                print('Image Saved to {}.npy'.format(sv_path + img_name[i]), 'RMSE: {}'.format(rmse['RMSE']))
                 np.save('{}/{}.npy'.format(sv_path, img_name[i]), img_out[i].squeeze().detach().cpu().numpy())
-                all_rmse.append([img_name[i], rmse['RMSE']])
+    
 
     metric_logger.synchronize_between_processes()
     torch.cuda.empty_cache()

@@ -11,12 +11,7 @@ from utils.image_resize import imresize
 
 
 root_path = None
-for path in ['/data/zhwzhong/Data/GDSR', '/data_c/wcy/Data/GDSR', '/root/autodl-tmp/Data/GDSR',
-             '/home/zhizhong/Data/GDSR', '/home/wcy/Data/GDSR']:
-    tmp_path = '{}/data'.format(path)
-    if os.path.exists(tmp_path):
-        root_path = tmp_path
-        break
+
 
 
 def get_array(x, cached):
@@ -89,45 +84,3 @@ class NIR(Dataset):
             'img_mask': (~torch.isnan(gt_img)).float(), 'lr_mask': (~torch.isnan(lr_img)).float()
         }
 
-#
-# import os
-# from config import args
-# from tabulate import tabulate
-# from utils.metrics import torch_psnr
-# from torch.utils.data import DataLoader
-#
-# args.dataset = 'NIR'
-# args.scale = 16
-# args.img_norm = False
-# args.degration = 'BD'
-# sum_rmse = []
-# sum_ssim = []
-# print(args)
-# nyu_data = DataLoader(NIR(args, 'val'))
-# for _, sample in enumerate(nyu_data):
-#     sum_rmse.append(torch_psnr(sample['lr_up'], sample['img_gt'])['RMSE'])
-# #
-# print(np.mean(sum_rmse))
-#
-# os.makedirs(f'/data/zhwzhong/Jupyter/DC-NAS/NIR/result/BD/LR/{args.scale}/val', exist_ok=True)
-# os.makedirs(f'/data/zhwzhong/Jupyter/DC-NAS/NIR/result/BD/GT/{args.scale}/val', exist_ok=True)
-# os.makedirs(f'/data/zhwzhong/Jupyter/DC-NAS/NIR/result/BD/RGB/{args.scale}/val', exist_ok=True)
-#
-# for _, sample in enumerate(nyu_data):
-#
-#     np.save(
-#         '/data/zhwzhong/Jupyter/DC-NAS/NIR/result/BD/LR/{}/val/{}.npy'.format(args.scale, sample['img_name'][0]),
-#         sample['lr_up'].cpu().squeeze().detach().numpy()
-#     )
-#
-#     np.save(
-#         '/data/zhwzhong/Jupyter/DC-NAS/NIR/result/BD/GT/{}/val/{}.npy'.format(args.scale, sample['img_name'][0]),
-#         sample['img_gt'].cpu().squeeze().detach().numpy()
-#     )
-#
-#     np.save(
-#         '/data/zhwzhong/Jupyter/DC-NAS/NIR/result/BD/RGB/{}/val/{}.npy'.format(args.scale, sample['img_name'][0]),
-#         sample['img_rgb'].cpu().squeeze().detach().numpy().transpose(1, 2, 0)
-#     )
-#
-# print(np.mean(sum_rmse))

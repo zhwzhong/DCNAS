@@ -12,10 +12,7 @@ from torch.utils.data import Dataset
 from utils.image_resize import imresize
 
 root_path = None
-for path in ['/data/zhwzhong/Data/yaogan', '/data_c/wcy/Data/yaogan', '/home/wcy/Data/yaogan', '/root/autodl-tmp/Data/yaogan']:
-    if os.path.exists(path):
-        root_path = path
-        break
+
 
 
 class WV2(Dataset):
@@ -59,15 +56,3 @@ class WV2(Dataset):
             'img_lr': lms_img, 'lr_up': lr_up, 'img_mask': (~torch.isnan(ms_img)).float(), 'lr_mask': (~torch.isnan(lms_img)).float()
         }
 
-
-# from config import args
-# from utils.metrics import torch_psnr
-# from torch.utils.data import DataLoader
-# nyu_data = DataLoader(WV2(args, 'GF2'))
-# # nyu_data = DataLoader(NYU(args, 'diml'))
-# sum_psnr = []
-# for _, sample in enumerate(nyu_data):
-#
-#     sum_psnr.append(torch_psnr(sample['img_gt'], sample['lr_up'])['MAE'])
-#
-# print(np.mean(sum_psnr))

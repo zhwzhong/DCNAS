@@ -45,33 +45,3 @@ class NYU(Base):
         }
 
 
-# import imageio
-# from config import args
-# from utils import metrics
-# from torch.utils.data import DataLoader
-#
-# import numpy as np
-#
-#
-# def calc_rmse(out_img, gt_img, border=0, multp=1):
-#     gt_img = gt_img.astype(np.float64)
-#     out_img = out_img.astype(np.float64)
-#     diff = gt_img * multp - out_img * multp
-#     if border != 0:
-#         diff = diff[border: -border, border: -border]
-#     return round(np.sqrt(np.mean(np.power(diff, 2))), 2)
-#
-# nyu_data = DataLoader(NYU(args, 'nyu'))
-# sum_rmse = []
-# sum_rmse_Np = []
-# # nyu_data = DataLoader(NYU(args, 'diml'))
-# for _, sample in enumerate(nyu_data):
-#
-#     rmse = metrics(
-#         sample['lr_up'], sample['img_gt'], sample['img_mask'], False, attr='nyu', dataset=args.dataset)['RMSE']
-#     sum_rmse.append(rmse)
-#     sum_rmse_Np.append(calc_rmse(sample['lr_up'].cpu().numpy().squeeze(), sample['img_gt'].cpu().numpy().squeeze(), border=6, multp=100))
-# print(np.mean(np.array(sum_rmse)))
-# print(np.mean(np.array(sum_rmse_Np)))
-
-

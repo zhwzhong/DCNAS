@@ -12,10 +12,6 @@ from torch.utils.data import Dataset
 from utils.image_resize import imresize
 
 root_path = None
-for path in ['/data/zhwzhong/Data/yaogan', '/data_c/wcy/Data/yaogan', '/home/wcy/Data/yaogan', '/root/autodl-tmp/Data/yaogan']:
-    if os.path.exists(path):
-        root_path = path
-        break
 
 
 class GF2(Dataset):

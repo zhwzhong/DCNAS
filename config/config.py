@@ -100,7 +100,7 @@ parser.add_argument('--num_stages', type=int, default=4)
 parser.add_argument('--num_features', type=int, default=16)
 
 # DCNAS
-parser.add_argument('--model_path', type=str, default='')   # Estimator Path
+parser.add_argument('--model_path', type=str, default='') 
 parser.add_argument('--train_arch_path', type=str, default='')
 parser.add_argument('--lookup_table_path', type=str, default='')
 parser.add_argument('--estimator_lr', type=float, default=1e-4)

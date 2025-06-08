@@ -34,18 +34,6 @@ def random_mb(num_blocks, num_base_ops):
         sel_ops.append(0)
     return np.array(sel_ops)
 
-# def get_random_architecture(num_stages, num_blocks, num_base_ops, num_fuse_ops):
-#
-#     rgb_encoder = [random_mb(num_blocks, num_base_ops) for _ in range(num_stages)]
-#     dep_encoder = [random_mb(num_blocks, num_base_ops) for _ in range(num_stages)]
-#     rec_decoder = [random_mb(num_blocks, num_base_ops) for _ in range(num_stages)]
-#     fuse_operator = np.random.randint(0, num_fuse_ops, num_stages)
-#
-#     arch = {
-#         'rgb_encoder': rgb_encoder, 'dep_encoder': dep_encoder, 'rec_decoder': rec_decoder, 'fuse_op': fuse_operator
-#     }
-#     return arch2key(arch, num_stages, num_blocks)
-
 
 def get_random_architecture(num_stages, num_blocks, num_base_ops, num_fuse_ops):
 
