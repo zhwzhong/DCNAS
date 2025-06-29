@@ -4,7 +4,7 @@ This repository provides the official implementation of our paper:
 
 **Dual-Level Cross-Modality Neural Architecture Search for Guided Image Super-Resolution**  
 Zhiwei Zhong, Xianming Liu, Junjun Jiang, Debin Zhao, and Shiqi Wang  
-(*Under review at IEEE Transactions on Pattern Analysis and Machine Intelligence*) 
+(*IEEE Transactions on Pattern Analysis and Machine Intelligence*) 
  
 
 ## 🔍 Abstract
@@ -130,10 +130,15 @@ Thanks the editors and the reviewers for their insightful comments, which are ve
 
 ## :memo: Citation
 ```
-@unpublished{zhong2024dcnas,
-  title={Dual-Level Cross-Modality Neural Architecture Search for Guided Image Super-Resolution},
-  author={Zhiwei Zhong, Xianming Liu, Junjun Jiang, Debin Zhao, and Shiqi Wang },
-  note={Under review at IEEE TPAMI},
-  year={2024}
-}
+@ARTICLE{11029618,
+  author={Zhong, Zhiwei and Liu, Xianming and Jiang, Junjun and Zhao, Debin and Wang, Shiqi},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Dual-Level Cross-Modality Neural Architecture Search for Guided Image Super-Resolution}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-18},
+  keywords={Feature extraction;Training;Computer architecture;Computational modeling;Superresolution;Neural architecture search;Image edge detection;Kernel;Streaming media;Reviews;Guided Image Super-resolution;Neural Architecture Search;Ranking Loss},
+  doi={10.1109/TPAMI.2025.3578468}}
+
 ```
