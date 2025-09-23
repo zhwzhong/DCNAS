@@ -19,6 +19,9 @@ Guided image super-resolution (GISR) aims to reconstruct a high-resolution (HR) 
 
 ## :bar_chart: Results
 
+通过网盘分享的文件：DCNAS RESULT.zip
+链接: https://pan.baidu.com/s/1UvE9AxcsJTM4w7AqRdoFSA?pwd=GISR 提取码: GISR 
+
 <p align="center">
   <img src="https://github.com/zhwzhong/DCNAS/blob/main/res.png">
 </p>
