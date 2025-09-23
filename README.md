@@ -126,6 +126,10 @@ With the trained model,  you can test your images.
 python main.py --test_only --model MODEL_NAME --dataset DATA_NAME
 ```
 
+通过网盘分享的文件：DCNAS RESULT.zip
+([实验结果]https://pan.baidu.com/s/1UvE9AxcsJTM4w7AqRdoFSA?pwd=GISR) 提取码: GISR 
+
+
 ## :gear: Acknowledgments
 
 Thanks the editors and the reviewers for their insightful comments, which are very helpful to improve our paper!
