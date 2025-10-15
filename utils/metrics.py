@@ -104,4 +104,64 @@ def de_normalize(*imgs, gt_img, attr, args):
     return out if len(out) > 1 else out[0]
 
 
+def torch_rmse(im_pred, im_true, mask, attr, mul_ratio=1):
+    border = 0
 
+    b, c, h, w = im_true.size()
+    if border != 0:
+        mask = mask.view(b, c, h, w)[:, :, border: -border, border: -border]
+        im_pred = im_pred.view(b, c, h, w)[:, :, border: -border, border: -border]
+        im_true = im_true.view(b, c, h, w)[:, :, border: -border, border: -border]
+
+    mae = torch.mean(torch.abs((im_true.float()[mask == 1.] - im_pred.float()[mask == 1.]))).item()
+    rmse = torch.sqrt(torch.mean((im_true.float()[mask == 1.] - im_pred.float()[mask == 1.]) ** 2)).item() * mul_ratio
+    return {'RMSE': rmse, 'MAE': mae}
+    
+@torch.no_grad()
+def torch_psnr(img1, img2, border=0, data_range=255, qt=False, slice_ssim=False):
+    if border != 0:
+        img1 = img1[:, :, border: -border, border: -border]
+        img2 = img2[:, :, border: -border, border: -border]
+    if qt:
+        img1, img2 = quantize(img1, data_range), quantize(img2, data_range)
+
+    mse = torch.mean((img1 - img2) ** 2)
+    if mse == 0:
+        return float('inf')
+    else:
+        _img1 = img1.detach().cpu().numpy().squeeze()
+        _img2 = img2.detach().cpu().numpy().squeeze()
+
+        ssim_metric = []
+        if slice_ssim:
+            for index in range(_img1.shape[0]):
+
+                ssim_metric.append(structural_similarity(_img2[index], _img1[index], data_range=_img2.max()))
+
+            ssim_metric = np.mean(ssim_metric)
+        else:
+            ssim_metric = structural_similarity(_img2, _img1,  data_range=data_range, channel_axis=0)
+        return {'RMSE': 20 * torch.log10_(data_range / torch.sqrt(mse)).item(), 'MAE': ssim_metric}
+
+def metrics(im_pred, im_true, mask, gdata, attr, dataset):
+    sum_mae = 0
+    sum_rmse = 0
+    border = 6 if dataset in ['UAV'] else 0
+    for index in range(im_pred.size(0)):
+        if gdata:
+            metric = mask_rmse(im_pred[index: index + 1], im_true[index: index + 1], mask[index: index + 1], attr)
+        elif dataset in ['WV2', 'WV3', 'GF2', 'NIR', 'UAV', 'NIR']:
+            metric = torch_psnr(
+                im_pred[index: index + 1], im_true[index: index + 1], border=border, data_range=255, qt=True
+            )
+        elif dataset in ['FastMRI', 'M4Raw']:
+            # print('Here', im_pred.size())
+            metric = torch_psnr(
+                im_pred[index: index + 1], im_true[index: index + 1], border=border,
+                data_range=im_true[index: index + 1].max(), slice_ssim=True  # MIN 分开计算SSIM，合到一起算PSNR
+            )
+        else:
+            metric = torch_rmse(im_pred[index: index + 1], im_true[index: index + 1], mask[index: index + 1], attr)
+        sum_mae += metric['MAE']
+        sum_rmse += metric['RMSE']
+    return {'RMSE': sum_rmse / im_pred.size(0), 'MAE': sum_mae / im_pred.size(0)}
